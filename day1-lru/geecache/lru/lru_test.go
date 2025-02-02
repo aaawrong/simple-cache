@@ -1,4 +1,4 @@
-package xcache
+package lru
 
 import (
 	"reflect"
