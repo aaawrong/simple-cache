@@ -40,8 +40,7 @@ func TestGroup_Get(t *testing.T) {
 	))
 
 	for k, v := range db {
-		view, err := gee.Get(k)
-		if err != nil || view.String() != v {
+		if view, err := gee.Get(k); err != nil || view.String() != v {
 			t.Fatal("failed to get value of Tom")
 		} // 测试回调函数
 		if _, err := gee.Get(k); err != nil || loadCounts[k] > 1 {

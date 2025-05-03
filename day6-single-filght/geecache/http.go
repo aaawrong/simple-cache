@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"day5/consistenthash"
+	"day6/consistenthash"
 )
 
 const (
